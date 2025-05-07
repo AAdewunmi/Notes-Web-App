@@ -12,3 +12,11 @@ body {
 .notes * {
     font-family: sans-serif;
 }
+
+.notes__sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
