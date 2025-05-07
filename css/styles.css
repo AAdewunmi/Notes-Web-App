@@ -37,3 +37,13 @@ body {
 .notes__add:hover {
     background: #00af8c;
 }
+
+.notes__list-item {
+    cursor: pointer;
+}
+
+.notes__list-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
