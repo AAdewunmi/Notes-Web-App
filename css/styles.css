@@ -47,3 +47,12 @@ body {
     border-radius: 7px;
     font-weight: bold;
 }
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 10px;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+}
