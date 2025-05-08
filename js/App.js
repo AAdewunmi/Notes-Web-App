@@ -17,4 +17,10 @@ export default class App {
         this._setActiveNote(notes[0]);
         }
     }
+
+    _setNotes(notes) {
+        this.notes = notes;
+        this.view.updateNoteList(notes);
+        this.view.updateNotePreviewVisibility(notes.length > 0);
+    }
 }
