@@ -23,4 +23,9 @@ export default class App {
         this.view.updateNoteList(notes);
         this.view.updateNotePreviewVisibility(notes.length > 0);
     }
+
+    _setActiveNote(note) {
+        this.activeNote = note;
+        this.view.updateActiveNote(note);
+    }
 }
