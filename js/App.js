@@ -10,4 +10,11 @@ export default class App {
     this._refreshNotes();
   }
 
+    _refreshNotes() {
+        const notes = NotesAPI.getAllNotes();
+        this._setNotes(notes);
+        if (notes.length > 0) {
+        this._setActiveNote(notes[0]);
+        }
+    }
 }
