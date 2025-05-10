@@ -108,5 +108,10 @@ export default class NotesView {
       .querySelector(`.notes__list-item[data-note-id="${note.id}"]`)
       .classList.add("notes__list-item--selected");
   }
-  
+
+  updateNotePreviewVisibility(visible) {
+    this.root.querySelector(".notes__preview").style.visibility = visible
+      ? "visible"
+      : "hidden";
+  }
 }
